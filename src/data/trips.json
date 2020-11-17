@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/travel-1.jpg",
+        "alt": "Kalinga Building",
+        "name": "Kalinga Building",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/travel-2.jpg",
+        "alt": "The Enchanted Valley",
+        "name": "The Enchanted Valley",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/travel-3-tah-mahal.jpg",
+        "alt": "Taj Mahal",
+        "name": "Taj Mahal",
+        "button": "View Destination"
+    },
+    {
+        "img": "../assets/images/travel-4.jpg",
+        "alt": "Kaly Yuga City",
+        "name": "Kaly Yuga City",
+        "button": "View Destination"
+    }
+]
