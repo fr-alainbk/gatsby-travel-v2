@@ -67,6 +67,10 @@ const Nav = styled.nav`
   position: sticky;
   top: 0;
   /* position: relative; */
+  @media screen and (max-width: 768px) {
+    background: "transparent";
+    position: relative;
+  }
 `
 
 const NavLink = styled(Link)`
