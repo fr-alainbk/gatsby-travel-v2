@@ -33,9 +33,10 @@ const Trips = ({ heading }) => {
       tripsArray.push(
         <ProductCard
           key={index}
-          data-sal="slide-up"
-          data-sal-delay="300"
+          data-sal="slide-down"
+          data-sal-delay="150"
           data-sal-easing="ease"
+          data-sal-duration="1000"
         >
           <ProductImage
             alt={item.node.alt}
@@ -69,9 +70,9 @@ const Trips = ({ heading }) => {
     <ProductsContainer id="trips">
       <ProductsHeading
         data-sal="slide-up"
-        data-sal-delay="300"
+        data-sal-delay="150"
         data-sal-easing="ease"
-        data-sal-duration="1000"
+        data-sal-duration="1300"
       >
         {heading}
       </ProductsHeading>
