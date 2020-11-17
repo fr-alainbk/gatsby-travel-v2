@@ -4,10 +4,6 @@ import Img from "gatsby-image"
 import { FaRegLightbulb } from "react-icons/fa"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { graphql, useStaticQuery } from "gatsby"
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-// ..
-AOS.init()
 
 const Testimonials = () => {
   const data = useStaticQuery(graphql`
@@ -34,11 +30,10 @@ const Testimonials = () => {
   return (
     <TestimonialsContainer id="testimonials">
       <Description
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-out"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
       >
         Listen To Their Voices
       </Description>
@@ -53,20 +48,18 @@ const Testimonials = () => {
               `}
             />
             <h3
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out"
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-easing="ease-in-out"
+              data-sal-duration="1000"
             >
               Thomas Bowele
             </h3>
             <p
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out"
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
             >
               What can I say? That's the kind of thing everyone needs to try at
               least once. I'm glad I gave it a shot. One of the best moments I
@@ -82,20 +75,18 @@ const Testimonials = () => {
               `}
             />
             <h3
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out"
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
             >
               Anais Talou
             </h3>
             <p
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out"
+              data-sal="slide-up"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
             >
               I really enjoyed visiting all these places. It was such a great
               experience, and I look forward to repeat it very soon.
@@ -103,11 +94,10 @@ const Testimonials = () => {
           </Testimonial>
         </ColumnOne>
         <ColumnTwo
-          data-aos="flip-left"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          data-sal="flip-right"
+          data-sal-delay="300"
+          data-sal-easing="ease-in-out"
+          data-sal-duration="1000"
         >
           {data.allFile.edges.map((image, key) => (
             <Images key={key} fluid={image.node.childImageSharp.fluid} />

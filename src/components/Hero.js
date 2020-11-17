@@ -2,10 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
 import Video from "../assets/videos/travel.mp4"
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-// ..
-AOS.init()
 
 const Hero = () => {
   return (
@@ -17,21 +13,19 @@ const Hero = () => {
         <HeroItems>
           <HeroH1
             as="h1"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
           >
             EXPLORE THE WORLD WITH US
           </HeroH1>
           <HeroP
             as="h1"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="1000"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in"
+            data-sal="slide-up"
+            data-sal-delay="900"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
           >
             Visit the most beautiful places on the planet
           </HeroP>

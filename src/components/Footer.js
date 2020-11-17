@@ -6,20 +6,14 @@ import InstagramIcon from "@material-ui/icons/Instagram"
 import TwitterIcon from "@material-ui/icons/Twitter"
 import PinterestIcon from "@material-ui/icons/Pinterest"
 
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-// ..
-AOS.init()
-
 const Footer = () => {
   return (
     <FooterContainer
       id="contact"
-      data-aos="slide-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="750"
-      data-aos-easing="ease-in-out"
+      data-sal="slide-up"
+      data-sal-delay="100"
+      data-sal-easing="ease"
+      data-sal-duration="1000"
     >
       <FooterLinksWrapper>
         <FooterDesc>

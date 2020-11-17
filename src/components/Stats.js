@@ -1,29 +1,23 @@
 import React from "react"
 import styled from "styled-components"
 import { StatsData } from "../data/StatsData"
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-// ..
-AOS.init()
 
 const Stats = () => {
   return (
     <StatsContainer>
       <Heading
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="500"
-        data-aos-easing="ease-in"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
       >
         Our Unique Features
       </Heading>
       <Wrapper
-        data-aos="slide-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="750"
-        data-aos-easing="ease-in"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
       >
         {StatsData.map((item, index) => {
           return (

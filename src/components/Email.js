@@ -2,27 +2,21 @@ import React from "react"
 import styled from "styled-components"
 import EmailBg from "../assets/images/email1.jpg"
 import { Button } from "./Button"
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-// ..
-AOS.init()
 
 const Email = () => {
   return (
     <EmailContainer
       as="section"
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
+      data-sal="slide-up"
+      data-sal-delay="100"
+      data-sal-easing="ease"
+      data-sal-duration="1000"
     >
       <EmailContent
-        data-aos="slide-down"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+        data-sal="slide-down"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="1300"
       >
         <h1>Get Access to Exclusive Offers</h1>
         <p>

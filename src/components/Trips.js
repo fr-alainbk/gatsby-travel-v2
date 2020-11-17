@@ -4,10 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Button } from "./Button"
 import { ImLocation } from "react-icons/im"
-import AOS from "aos"
-import "aos/dist/aos.css" // You can also use <link> for styles
-// ..
-AOS.init()
 
 const Trips = ({ heading }) => {
   const data = useStaticQuery(graphql`
@@ -37,11 +33,9 @@ const Trips = ({ heading }) => {
       tripsArray.push(
         <ProductCard
           key={index}
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
         >
           <ProductImage
             alt={item.node.alt}
@@ -74,11 +68,10 @@ const Trips = ({ heading }) => {
   return (
     <ProductsContainer id="trips">
       <ProductsHeading
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+        data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+        data-sal-duration="1000"
       >
         {heading}
       </ProductsHeading>
